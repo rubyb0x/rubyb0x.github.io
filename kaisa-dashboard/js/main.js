@@ -1,5 +1,6 @@
 //data base_url
-var url = 'data/bndry_basilan_OB2019.geojson';
+//var url = 'https://rubyb0x.github.io/kaisa-dashboard/data/bndry_basilan_OB2019.geojson';
+var url = 'https://rubyb0x.github.io/kaisa-dashboard/data/basilan_ob2019.json';
 //var url = 'data/boundaries_barmm_muni_OB2019.geojson';
 
 //map options
