@@ -1,5 +1,6 @@
-//data base_url
-var url = 'https://rubyb0x.github.io/kaisa-dashboard/data/map.geojson';
+//data urls
+var mapurl = 'https://rubyb0x.github.io/kaisa-dashboard/data/map.geojson';
+var brgydist = 'http://localhost/data/cf_brgydist.json';
 
 //map options
 var mapOptions = {
@@ -13,5 +14,8 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-var geojsonLayer = new L.GeoJSON.AJAX(url);
+var geojsonLayer = new L.GeoJSON.AJAX(mapurl);
 geojsonLayer.addTo(map);
+
+var brgy_dist = $.getJSON(brgydist);
+console.log(brgy_dist);
